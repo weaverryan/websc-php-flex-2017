@@ -1,2 +1,3 @@
-# websc-php-flex-2017
+# Web Summer Camp & Symfony Flex!!! Woh!!
+
 Hi friends!
