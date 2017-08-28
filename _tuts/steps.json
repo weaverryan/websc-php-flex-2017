@@ -54,7 +54,17 @@
             "id": "profiler-install-profiler",
             "name": "Profiler: Install profiler",
             "description": null
+        },
+        {
+            "id": "translation-install-it",
+            "name": "Translation: install it",
+            "description": null
+        },
+        {
+            "id": "translation-remove-it",
+            "name": "Translation: Remove it",
+            "description": null
         }
     ],
-    "sha": "4f3fdb7723c7f251ed0e0a515884ba1359b2b9a5"
+    "sha": "3c3b4993c6e7d26fefc3ce3c514a07eff582f6ce"
 }
