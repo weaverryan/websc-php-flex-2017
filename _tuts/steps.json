@@ -1,0 +1,40 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "setup-post-running-install",
+            "name": "Setup: Post running install",
+            "description": null
+        },
+        {
+            "id": "routes-yaml-route-controller",
+            "name": "Routes: YAML route + controller",
+            "description": null
+        },
+        {
+            "id": "routes-install-annotations-fwextra",
+            "name": "Routes: Install annotations + fwextra",
+            "description": null
+        },
+        {
+            "id": "routes-enable-annotation-import",
+            "name": "Routes: Enable annotation import",
+            "description": null
+        },
+        {
+            "id": "twig-install-twig",
+            "name": "Twig: Install twig",
+            "description": null
+        },
+        {
+            "id": "twig-render-template",
+            "name": "Twig: Render template",
+            "description": null
+        }
+    ],
+    "sha": "281755f3a8ef4089b7a302696a66d300f1bbdc67"
+}

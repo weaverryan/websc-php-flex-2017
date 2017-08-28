@@ -1,0 +1,41 @@
+diff --git a/config/routes.yaml b/config/routes.yaml
+index 83d0f78..5de830d 100644
+--- a/config/routes.yaml
++++ b/config/routes.yaml
+@@ -4,6 +4,6 @@ summer_camp_fish:
+ 
+ # Depends on sensio/framework-extra-bundle, doctrine/annotations, and doctrine/cache
+ #   install with composer req sensio/framework-extra-bundle annot
+-#controllers:
+-#    resource: ../src/Controller/
+-#    type: annotation
++controllers:
++    resource: ../src/Controller/
++    type: annotation
+diff --git a/src/Controller/SummerCampController.php b/src/Controller/SummerCampController.php
+index 501bf04..d756f85 100644
+--- a/src/Controller/SummerCampController.php
++++ b/src/Controller/SummerCampController.php
+@@ -2,6 +2,7 @@
+ 
+ namespace App\Controller;
+ 
++use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+ 
+ class SummerCampController extends Controller
+@@ -12,4 +13,14 @@ class SummerCampController extends Controller
+             'fish' => ['brancina', 'tune', 'romba', 'škampi']
+         ]);
+     }
++
++    /**
++     * @Route("/speakers")
++     */
++    public function speakers()
++    {
++        return $this->json([
++            'speakers' => ['Marco', 'Paula', 'Antonio', 'Marcello']
++        ]);
++    }
+ }

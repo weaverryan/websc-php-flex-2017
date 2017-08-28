@@ -1,0 +1,26 @@
+diff --git a/src/Controller/SummerCampController.php b/src/Controller/SummerCampController.php
+index d756f85..f59c03d 100644
+--- a/src/Controller/SummerCampController.php
++++ b/src/Controller/SummerCampController.php
+@@ -19,7 +19,7 @@ class SummerCampController extends Controller
+      */
+     public function speakers()
+     {
+-        return $this->json([
++        return $this->render('summer_camp/speakers.twig', [
+             'speakers' => ['Marco', 'Paula', 'Antonio', 'Marcello']
+         ]);
+     }
+diff --git a/templates/summer_camp/speakers.twig b/templates/summer_camp/speakers.twig
+new file mode 100644
+index 0000000..fa4a872
+--- /dev/null
++++ b/templates/summer_camp/speakers.twig
+@@ -0,0 +1,7 @@
++<h1>Speakers!</h1>
++
++<ul>
++    {% for speaker in speakers %}
++        <li>{{ speaker }}</li>
++    {% endfor %}
++</ul>
