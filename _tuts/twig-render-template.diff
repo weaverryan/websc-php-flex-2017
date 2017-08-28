@@ -11,16 +11,38 @@ index d756f85..f59c03d 100644
              'speakers' => ['Marco', 'Paula', 'Antonio', 'Marcello']
          ]);
      }
+diff --git a/templates/base.twig b/templates/base.twig
+new file mode 100644
+index 0000000..c3dddd3
+--- /dev/null
++++ b/templates/base.twig
+@@ -0,0 +1,12 @@
++<!DOCTYPE html>
++<html>
++    <head>
++        <meta charset="UTF-8" />
++        <title>{% block title %}Welcome!{% endblock %}</title>
++        {% block stylesheets %}{% endblock %}
++    </head>
++    <body>
++        {% block body %}{% endblock %}
++        {% block javascripts %}{% endblock %}
++    </body>
++</html>
 diff --git a/templates/summer_camp/speakers.twig b/templates/summer_camp/speakers.twig
 new file mode 100644
-index 0000000..fa4a872
+index 0000000..50a080f
 --- /dev/null
 +++ b/templates/summer_camp/speakers.twig
-@@ -0,0 +1,7 @@
-+<h1>Speakers!</h1>
+@@ -0,0 +1,11 @@
++{% extends 'base.twig' %}
 +
-+<ul>
-+    {% for speaker in speakers %}
-+        <li>{{ speaker }}</li>
-+    {% endfor %}
-+</ul>
++{% block body %}
++    <h1>Speakers!</h1>
++
++    <ul>
++        {% for speaker in speakers %}
++            <li>{{ speaker }}</li>
++        {% endfor %}
++    </ul>
++{% endblock %}

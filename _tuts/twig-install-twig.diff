@@ -1,9 +1,9 @@
 diff --git a/composer.json b/composer.json
-index aee0a58..b9a1987 100644
+index c4e0601..6351086 100644
 --- a/composer.json
 +++ b/composer.json
-@@ -9,6 +9,7 @@
-         "symfony/annotations-pack": "^1.0",
+@@ -10,6 +10,7 @@
+         "symfony/console": "^3.3",
          "symfony/flex": "^1.0",
          "symfony/framework-bundle": "^3.3",
 +        "symfony/twig-bundle": "^3.3",
@@ -11,19 +11,19 @@ index aee0a58..b9a1987 100644
      },
      "require-dev": {
 diff --git a/composer.lock b/composer.lock
-index 9a5d68c..94fc84e 100644
+index 29149bd..5d5f87c 100644
 --- a/composer.lock
 +++ b/composer.lock
 @@ -4,7 +4,7 @@
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
          "This file is @generated automatically"
      ],
--    "content-hash": "ee32386ac666fa9bf2b100ee30737829",
-+    "content-hash": "7aa2707bb7c6c87de75cc40a97e636b6",
+-    "content-hash": "455e43060a1b81e32c8ec1ecbfc3e443",
++    "content-hash": "9f852f6470e1545a4eecf9e0e30c9ec9",
      "packages": [
          {
              "name": "doctrine/annotations",
-@@ -1658,6 +1658,165 @@
+@@ -1727,6 +1727,165 @@
              "time": "2017-04-12T14:14:56+00:00"
          },
          {
@@ -189,7 +189,7 @@ index 9a5d68c..94fc84e 100644
              "name": "symfony/yaml",
              "version": "v3.3.6",
              "source": {
-@@ -1711,6 +1870,72 @@
+@@ -1780,6 +1939,72 @@
              "description": "Symfony Yaml Component",
              "homepage": "https://symfony.com",
              "time": "2017-07-23T12:43:26+00:00"
