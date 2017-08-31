@@ -7,4 +7,6 @@ return [
     'Symfony\Bundle\MonologBundle\MonologBundle' => ['all' => true],
     'Symfony\Bundle\WebProfilerBundle\WebProfilerBundle' => ['dev' => true, 'test' => true],
     'Symfony\Bundle\WebServerBundle\WebServerBundle' => ['dev' => true],
+    'Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle' => ['all' => true],
+    'Doctrine\Bundle\DoctrineBundle\DoctrineBundle' => ['all' => true],
 ];
