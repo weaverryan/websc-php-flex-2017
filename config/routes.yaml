@@ -1,6 +1,6 @@
-#index:
-#    path: /
-#    defaults: { _controller: 'App\Controller\DefaultController::index' }
+summer_camp_fish:
+    path: /fish
+    defaults: { _controller: 'App\Controller\SummerCampController::fish' }
 
 # Depends on sensio/framework-extra-bundle, doctrine/annotations, and doctrine/cache
 #   install with composer req sensio/framework-extra-bundle annot
