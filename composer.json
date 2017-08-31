@@ -29,8 +29,10 @@
         }
     },
     "scripts": {
-        "auto-scripts": [
-        ],
+        "auto-scripts": {
+            "make cache-warmup": "script",
+            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd"
+        },
         "post-install-cmd": [
             "@auto-scripts"
         ],
@@ -45,7 +47,7 @@
     },
     "extra": {
         "symfony": {
-            "id": "",
+            "id": "01BRHZJZJAWN9A8M1H2EVBHDG9",
             "allow-contrib": false
         }
     }
