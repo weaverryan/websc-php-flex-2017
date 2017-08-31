@@ -1,5 +1,5 @@
 diff --git a/src/Controller/SummerCampController.php b/src/Controller/SummerCampController.php
-index f59c03d..3271da4 100644
+index 5a351a9..20ceeda 100644
 --- a/src/Controller/SummerCampController.php
 +++ b/src/Controller/SummerCampController.php
 @@ -2,6 +2,7 @@
@@ -19,6 +19,6 @@ index f59c03d..3271da4 100644
      {
 +        $logger->info('We are logging stuff!!!!');
 +
-         return $this->render('summer_camp/speakers.twig', [
+         return $this->render('summer_camp/speakers.html.twig', [
              'speakers' => ['Marco', 'Paula', 'Antonio', 'Marcello']
          ]);
