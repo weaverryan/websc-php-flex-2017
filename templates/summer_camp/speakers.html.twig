@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Speakers!</h1>
+
+    <ul>
+        {% for speaker in speakers %}
+            <li>{{ speaker }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
