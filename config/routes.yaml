@@ -4,6 +4,6 @@ summer_camp_fish:
 
 # Depends on sensio/framework-extra-bundle, doctrine/annotations, and doctrine/cache
 #   install with composer req sensio/framework-extra-bundle annot
-#controllers:
-#    resource: ../src/Controller/
-#    type: annotation
+controllers:
+    resource: ../src/Controller/
+    type: annotation
