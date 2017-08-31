@@ -40,3 +40,5 @@ $item4->setDescription('1 kg, probably delicious');
 $em->persist($item4);
 
 $em->flush();
+
+echo "\n  Dude, I just hooked you up with 3 tasty menu items! \n\n";
