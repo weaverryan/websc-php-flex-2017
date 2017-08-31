@@ -1,5 +1,5 @@
 diff --git a/src/Controller/SummerCampController.php b/src/Controller/SummerCampController.php
-index d756f85..f59c03d 100644
+index d756f85..5a351a9 100644
 --- a/src/Controller/SummerCampController.php
 +++ b/src/Controller/SummerCampController.php
 @@ -19,7 +19,7 @@ class SummerCampController extends Controller
@@ -7,15 +7,15 @@ index d756f85..f59c03d 100644
      public function speakers()
      {
 -        return $this->json([
-+        return $this->render('summer_camp/speakers.twig', [
++        return $this->render('summer_camp/speakers.html.twig', [
              'speakers' => ['Marco', 'Paula', 'Antonio', 'Marcello']
          ]);
      }
-diff --git a/templates/base.twig b/templates/base.twig
+diff --git a/templates/base.html.twig b/templates/base.html.twig
 new file mode 100644
 index 0000000..c3dddd3
 --- /dev/null
-+++ b/templates/base.twig
++++ b/templates/base.html.twig
 @@ -0,0 +1,12 @@
 +<!DOCTYPE html>
 +<html>
@@ -29,13 +29,13 @@ index 0000000..c3dddd3
 +        {% block javascripts %}{% endblock %}
 +    </body>
 +</html>
-diff --git a/templates/summer_camp/speakers.twig b/templates/summer_camp/speakers.twig
+diff --git a/templates/summer_camp/speakers.html.twig b/templates/summer_camp/speakers.html.twig
 new file mode 100644
-index 0000000..50a080f
+index 0000000..4708cd9
 --- /dev/null
-+++ b/templates/summer_camp/speakers.twig
++++ b/templates/summer_camp/speakers.html.twig
 @@ -0,0 +1,11 @@
-+{% extends 'base.twig' %}
++{% extends 'base.html.twig' %}
 +
 +{% block body %}
 +    <h1>Speakers!</h1>
