@@ -5,6 +5,7 @@
     "description": "Project description",
     "require": {
         "php": "^7.1.3",
+        "symfony/console": "^3.3",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^3.3",
         "symfony/web-server-bundle": "^3.3",
