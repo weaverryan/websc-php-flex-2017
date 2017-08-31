@@ -19,7 +19,7 @@ class SummerCampController extends Controller
      */
     public function speakers()
     {
-        return $this->json([
+        return $this->render('summer_camp/speakers.html.twig', [
             'speakers' => ['Marco', 'Paula', 'Antonio', 'Marcello']
         ]);
     }
