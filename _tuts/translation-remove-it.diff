@@ -1,5 +1,5 @@
 diff --git a/composer.json b/composer.json
-index 4d2f744..913fca2 100644
+index e0d1ca6..56f1edb 100644
 --- a/composer.json
 +++ b/composer.json
 @@ -12,7 +12,6 @@
@@ -8,40 +8,40 @@ index 4d2f744..913fca2 100644
          "symfony/profiler-pack": "^1.0",
 -        "symfony/translation": "^3.3",
          "symfony/twig-bundle": "^3.3",
+         "symfony/web-server-bundle": "^3.3",
          "symfony/yaml": "^3.3"
-     },
 diff --git a/composer.lock b/composer.lock
-index cf8f422..79eb24f 100644
+index e309acb..1dabc6a 100644
 --- a/composer.lock
 +++ b/composer.lock
 @@ -4,7 +4,7 @@
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
          "This file is @generated automatically"
      ],
--    "content-hash": "6dcdd17e33d7ea5e5fbcf6b8f9b4b844",
-+    "content-hash": "4e3f191b53a23b555593cd1936e06da2",
+-    "content-hash": "c6a5118ad4674b645673032dd9803d22",
++    "content-hash": "2d8d8c6bcd22f280c616e26196592371",
      "packages": [
          {
              "name": "doctrine/annotations",
-@@ -2064,71 +2064,6 @@
-             "time": "2017-04-12T14:14:56+00:00"
+@@ -2112,71 +2112,6 @@
+             "time": "2017-07-29T21:54:42+00:00"
          },
          {
 -            "name": "symfony/translation",
--            "version": "v3.3.6",
+-            "version": "v3.3.8",
 -            "source": {
 -                "type": "git",
 -                "url": "https://github.com/symfony/translation.git",
--                "reference": "35dd5fb003c90e8bd4d8cabdf94bf9c96d06fdc3"
+-                "reference": "add53753d978f635492dfe8cd6953f6a7361ef90"
 -            },
 -            "dist": {
 -                "type": "zip",
--                "url": "https://api.github.com/repos/symfony/translation/zipball/35dd5fb003c90e8bd4d8cabdf94bf9c96d06fdc3",
--                "reference": "35dd5fb003c90e8bd4d8cabdf94bf9c96d06fdc3",
+-                "url": "https://api.github.com/repos/symfony/translation/zipball/add53753d978f635492dfe8cd6953f6a7361ef90",
+-                "reference": "add53753d978f635492dfe8cd6953f6a7361ef90",
 -                "shasum": ""
 -            },
 -            "require": {
--                "php": ">=5.5.9",
+-                "php": "^5.5.9|>=7.0.8",
 -                "symfony/polyfill-mbstring": "~1.0"
 -            },
 -            "conflict": {
@@ -89,11 +89,11 @@ index cf8f422..79eb24f 100644
 -            ],
 -            "description": "Symfony Translation Component",
 -            "homepage": "https://symfony.com",
--            "time": "2017-06-24T16:45:30+00:00"
+-            "time": "2017-07-29T21:54:42+00:00"
 -        },
 -        {
              "name": "symfony/twig-bridge",
-             "version": "v3.3.6",
+             "version": "v3.3.8",
              "source": {
 diff --git a/config/packages/translation.yaml b/config/packages/translation.yaml
 deleted file mode 100644

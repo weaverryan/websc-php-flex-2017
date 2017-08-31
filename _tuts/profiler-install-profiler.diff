@@ -1,5 +1,5 @@
 diff --git a/composer.json b/composer.json
-index e1eb3c3..913fca2 100644
+index 7233099..56f1edb 100644
 --- a/composer.json
 +++ b/composer.json
 @@ -11,6 +11,7 @@
@@ -8,18 +8,18 @@ index e1eb3c3..913fca2 100644
          "symfony/monolog-bundle": "^3.1",
 +        "symfony/profiler-pack": "^1.0",
          "symfony/twig-bundle": "^3.3",
+         "symfony/web-server-bundle": "^3.3",
          "symfony/yaml": "^3.3"
-     },
 diff --git a/composer.lock b/composer.lock
-index 1f98a27..79eb24f 100644
+index 7f75d67..718af61 100644
 --- a/composer.lock
 +++ b/composer.lock
 @@ -4,7 +4,7 @@
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
          "This file is @generated automatically"
      ],
--    "content-hash": "be882db1ef95d656de5d0a0cdc1a92b9",
-+    "content-hash": "4e3f191b53a23b555593cd1936e06da2",
+-    "content-hash": "e0134cc06f2c3871114317ce6ede7617",
++    "content-hash": "2d8d8c6bcd22f280c616e26196592371",
      "packages": [
          {
              "name": "doctrine/annotations",
@@ -78,7 +78,7 @@ index 1f98a27..79eb24f 100644
              "name": "psr/cache",
              "version": "1.0.1",
              "source": {
-@@ -1802,6 +1850,93 @@
+@@ -1801,6 +1849,65 @@
              "time": "2017-06-14T15:44:48+00:00"
          },
          {
@@ -141,6 +141,13 @@ index 1f98a27..79eb24f 100644
 +            "time": "2017-06-14T15:44:48+00:00"
 +        },
 +        {
+             "name": "symfony/process",
+             "version": "v3.3.8",
+             "source": {
+@@ -1850,6 +1957,34 @@
+             "time": "2017-07-29T21:54:42+00:00"
+         },
+         {
 +            "name": "symfony/profiler-pack",
 +            "version": "v1.0.1",
 +            "source": {
@@ -170,27 +177,27 @@ index 1f98a27..79eb24f 100644
 +        },
 +        {
              "name": "symfony/routing",
-             "version": "v3.3.6",
+             "version": "v3.3.8",
              "source": {
-@@ -2088,6 +2223,140 @@
-             "time": "2017-07-19T08:54:05+00:00"
+@@ -2136,6 +2271,140 @@
+             "time": "2017-08-22T11:12:00+00:00"
          },
          {
 +            "name": "symfony/var-dumper",
-+            "version": "v3.3.6",
++            "version": "v3.3.8",
 +            "source": {
 +                "type": "git",
 +                "url": "https://github.com/symfony/var-dumper.git",
-+                "reference": "b2623bccb969ad595c2090f9be498b74670d0663"
++                "reference": "89fcb5a73e0ede2be2512234c4e40457bb22b35f"
 +            },
 +            "dist": {
 +                "type": "zip",
-+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b2623bccb969ad595c2090f9be498b74670d0663",
-+                "reference": "b2623bccb969ad595c2090f9be498b74670d0663",
++                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/89fcb5a73e0ede2be2512234c4e40457bb22b35f",
++                "reference": "89fcb5a73e0ede2be2512234c4e40457bb22b35f",
 +                "shasum": ""
 +            },
 +            "require": {
-+                "php": ">=5.5.9",
++                "php": "^5.5.9|>=7.0.8",
 +                "symfony/polyfill-mbstring": "~1.0"
 +            },
 +            "conflict": {
@@ -241,24 +248,24 @@ index 1f98a27..79eb24f 100644
 +                "debug",
 +                "dump"
 +            ],
-+            "time": "2017-07-28T06:06:09+00:00"
++            "time": "2017-08-27T14:52:21+00:00"
 +        },
 +        {
 +            "name": "symfony/web-profiler-bundle",
-+            "version": "v3.3.6",
++            "version": "v3.3.8",
 +            "source": {
 +                "type": "git",
 +                "url": "https://github.com/symfony/web-profiler-bundle.git",
-+                "reference": "7539e228d6dce64bea95928716f6a5440e1ba336"
++                "reference": "abea989bafb861368962b75ee5a2280f00f7a50e"
 +            },
 +            "dist": {
 +                "type": "zip",
-+                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/7539e228d6dce64bea95928716f6a5440e1ba336",
-+                "reference": "7539e228d6dce64bea95928716f6a5440e1ba336",
++                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/abea989bafb861368962b75ee5a2280f00f7a50e",
++                "reference": "abea989bafb861368962b75ee5a2280f00f7a50e",
 +                "shasum": ""
 +            },
 +            "require": {
-+                "php": ">=5.5.9",
++                "php": "^5.5.9|>=7.0.8",
 +                "symfony/http-kernel": "~3.2",
 +                "symfony/polyfill-php70": "~1.0",
 +                "symfony/routing": "~2.8|~3.0",
@@ -307,21 +314,22 @@ index 1f98a27..79eb24f 100644
 +            ],
 +            "description": "Symfony WebProfilerBundle",
 +            "homepage": "https://symfony.com",
-+            "time": "2017-07-23T09:41:59+00:00"
++            "time": "2017-08-18T14:34:09+00:00"
 +        },
 +        {
-             "name": "symfony/yaml",
-             "version": "v3.3.6",
+             "name": "symfony/web-server-bundle",
+             "version": "v3.3.8",
              "source": {
 diff --git a/config/bundles.php b/config/bundles.php
-index 74fa563..1f8f631 100644
+index 3d45da1..4f331a4 100644
 --- a/config/bundles.php
 +++ b/config/bundles.php
-@@ -5,4 +5,5 @@ return [
+@@ -5,5 +5,6 @@ return [
      'Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle' => ['all' => true],
      'Symfony\Bundle\TwigBundle\TwigBundle' => ['all' => true],
      'Symfony\Bundle\MonologBundle\MonologBundle' => ['all' => true],
 +    'Symfony\Bundle\WebProfilerBundle\WebProfilerBundle' => ['dev' => true, 'test' => true],
+     'Symfony\Bundle\WebServerBundle\WebServerBundle' => ['dev' => true],
  ];
 diff --git a/config/packages/dev/web_profiler.yaml b/config/packages/dev/web_profiler.yaml
 new file mode 100644

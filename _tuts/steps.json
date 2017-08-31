@@ -11,6 +11,11 @@
             "description": null
         },
         {
+            "id": "webserver-install-it",
+            "name": "WebServer: Install it",
+            "description": null
+        },
+        {
             "id": "routes-yaml-route-controller",
             "name": "Routes: YAML route + controller",
             "description": null
@@ -64,7 +69,27 @@
             "id": "translation-remove-it",
             "name": "Translation: Remove it",
             "description": null
+        },
+        {
+            "id": "orm-install-orm",
+            "name": "ORM: Install orm",
+            "description": null
+        },
+        {
+            "id": "orm-add-entity",
+            "name": "ORM: Add entity",
+            "description": null
+        },
+        {
+            "id": "api-install-api",
+            "name": "API: Install api",
+            "description": null
+        },
+        {
+            "id": "api-enable-resource",
+            "name": "API: Enable resource",
+            "description": null
         }
     ],
-    "sha": "3c3b4993c6e7d26fefc3ce3c514a07eff582f6ce"
+    "sha": "1ff3499f71589f1bd79128a794d0d8cb24048f01"
 }

@@ -1,5 +1,5 @@
 diff --git a/composer.json b/composer.json
-index 6351086..e1eb3c3 100644
+index 5ded1fc..7233099 100644
 --- a/composer.json
 +++ b/composer.json
 @@ -10,6 +10,7 @@
@@ -8,18 +8,18 @@ index 6351086..e1eb3c3 100644
          "symfony/framework-bundle": "^3.3",
 +        "symfony/monolog-bundle": "^3.1",
          "symfony/twig-bundle": "^3.3",
+         "symfony/web-server-bundle": "^3.3",
          "symfony/yaml": "^3.3"
-     },
 diff --git a/composer.lock b/composer.lock
-index 5d5f87c..1f98a27 100644
+index 3afbcbc..7f75d67 100644
 --- a/composer.lock
 +++ b/composer.lock
 @@ -4,7 +4,7 @@
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
          "This file is @generated automatically"
      ],
--    "content-hash": "9f852f6470e1545a4eecf9e0e30c9ec9",
-+    "content-hash": "be882db1ef95d656de5d0a0cdc1a92b9",
+-    "content-hash": "39e20c2c67f892c6f4bb6789da13591f",
++    "content-hash": "e0134cc06f2c3871114317ce6ede7617",
      "packages": [
          {
              "name": "doctrine/annotations",
@@ -108,26 +108,26 @@ index 5d5f87c..1f98a27 100644
              "name": "psr/cache",
              "version": "1.0.1",
              "source": {
-@@ -1541,6 +1619,130 @@
-             "time": "2017-08-01T10:25:59+00:00"
+@@ -1540,6 +1618,130 @@
+             "time": "2017-08-28T22:35:03+00:00"
          },
          {
 +            "name": "symfony/monolog-bridge",
-+            "version": "v3.3.6",
++            "version": "v3.3.8",
 +            "source": {
 +                "type": "git",
 +                "url": "https://github.com/symfony/monolog-bridge.git",
-+                "reference": "b2e5cf7959432161c2816a20508f384200c995a3"
++                "reference": "101bddb65b99611ffe3e4ac0915bf5c4d74c16da"
 +            },
 +            "dist": {
 +                "type": "zip",
-+                "url": "https://api.github.com/repos/symfony/monolog-bridge/zipball/b2e5cf7959432161c2816a20508f384200c995a3",
-+                "reference": "b2e5cf7959432161c2816a20508f384200c995a3",
++                "url": "https://api.github.com/repos/symfony/monolog-bridge/zipball/101bddb65b99611ffe3e4ac0915bf5c4d74c16da",
++                "reference": "101bddb65b99611ffe3e4ac0915bf5c4d74c16da",
 +                "shasum": ""
 +            },
 +            "require": {
 +                "monolog/monolog": "~1.19",
-+                "php": ">=5.5.9",
++                "php": "^5.5.9|>=7.0.8",
 +                "symfony/http-kernel": "~2.8|~3.0"
 +            },
 +            "conflict": {
@@ -173,7 +173,7 @@ index 5d5f87c..1f98a27 100644
 +            ],
 +            "description": "Symfony Monolog Bridge",
 +            "homepage": "https://symfony.com",
-+            "time": "2017-06-06T15:10:52+00:00"
++            "time": "2017-07-29T21:54:42+00:00"
 +        },
 +        {
 +            "name": "symfony/monolog-bundle",
@@ -240,14 +240,15 @@ index 5d5f87c..1f98a27 100644
              "version": "v1.5.0",
              "source": {
 diff --git a/config/bundles.php b/config/bundles.php
-index d2ecb14..74fa563 100644
+index f6f246b..3d45da1 100644
 --- a/config/bundles.php
 +++ b/config/bundles.php
-@@ -4,4 +4,5 @@ return [
+@@ -4,5 +4,6 @@ return [
      'Symfony\Bundle\FrameworkBundle\FrameworkBundle' => ['all' => true],
      'Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle' => ['all' => true],
      'Symfony\Bundle\TwigBundle\TwigBundle' => ['all' => true],
 +    'Symfony\Bundle\MonologBundle\MonologBundle' => ['all' => true],
+     'Symfony\Bundle\WebServerBundle\WebServerBundle' => ['dev' => true],
  ];
 diff --git a/config/packages/dev/monolog.php b/config/packages/dev/monolog.php
 new file mode 100644
