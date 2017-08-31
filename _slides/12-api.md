@@ -26,3 +26,13 @@ SUCCESS WHEN:
 You can now go to `http://localhost:8000/menu_items`
 to see documentation! Now try going to `/menu_items.json`
 or `/menu_items.jsonld`!
+
+---------
+
+LOST?
+
+If you're lost, you can fast forward to the START of
+this step by running:
+
+    git reset --hard HEAD^
+    git checkout -b rescue11 origin/11-orm-finished

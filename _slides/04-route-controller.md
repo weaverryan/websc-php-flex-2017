@@ -27,3 +27,13 @@ SUCCESS WHEN:
 
 You can go to `http://localhost:8000/fish` and
 see a JSON response of some delicious fish. Mmmm.
+
+----------
+
+LOST?
+
+If you're lost, you can fast forward to the START of
+this step by running:
+
+    git reset --hard HEAD^
+    git checkout -b rescue03 origin/03-better-dev-server-finished

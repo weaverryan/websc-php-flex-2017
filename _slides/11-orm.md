@@ -28,3 +28,13 @@ You've got some data in the database? You can check
 by running:
 
     ./bin/console doctrine:query:sql 'SELECT * FROM menu_item'
+
+---------
+
+LOST?
+
+If you're lost, you can fast forward to the START of
+this step by running:
+
+    git reset --hard HEAD^
+    git checkout -b rescue09 origin/09-profiler-finished

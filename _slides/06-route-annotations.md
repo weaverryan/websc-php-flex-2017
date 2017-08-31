@@ -29,3 +29,13 @@ SUCCESS WHEN:
 You can go to `http://localhost:8000/speakers` and
 see a JSON response of some of the speakers. They
 are not as delicious as fish, but are still nice.
+
+---------
+
+LOST?
+
+If you're lost, you can fast forward to the START of
+this step by running:
+
+    git reset --hard HEAD^
+    git checkout -b rescue04 origin/04-route-controller-finished

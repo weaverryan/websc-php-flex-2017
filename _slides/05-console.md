@@ -11,3 +11,13 @@
 SUCCESS WHEN:
 
 You see a list of all the (1) routes!
+
+---------
+
+LOST?
+
+If you're lost, you can fast forward to the START of
+this step by running:
+
+    git reset --hard HEAD^
+    git checkout -b rescue04 origin/04-route-controller-finished

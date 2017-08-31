@@ -31,3 +31,13 @@ SUCCESS WHEN:
 You can go to `http://localhost:8000/speakers` and
 it's an HTML page! Sure, it looks ugly. But it has
 a great personality.
+
+---------
+
+LOST?
+
+If you're lost, you can fast forward to the START of
+this step by running:
+
+    git reset --hard HEAD^
+    git checkout -b rescue06 origin/06-route-annotations-finished
