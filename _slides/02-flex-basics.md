@@ -13,4 +13,4 @@ C) Start the built-in PHP web server:
 SUCCESS WHEN:
 
 You can go to `http://localhost:8000` and see a
-Symfony "Route not found" error page! Yay for errors!
+Symfony "NotFoundHttpException" error page! Yay for errors!

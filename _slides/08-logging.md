@@ -14,6 +14,10 @@ C) Log something! Like, your favorite speaker... or color!
 
 SUCCESS WHEN:
 
-You can go to `http://localhost:8000/speakers` and
-it's an HTML page! Sure, it looks ugly. But it has
-a great personality.
+Refresh the page! If you don't see any errors, it
+probably just logged :). 
+
+By default, logs are saved in `var/logs/dev.log`. You
+can tail that file to see your logs:
+
+    tail var/logs/dev.log

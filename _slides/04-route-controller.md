@@ -4,6 +4,7 @@
 A) in `config/routes.yaml`:
 
     1) Create a route with the URL: `/fish`
+        hint: uncomment the "index" route as an example
     
     2) For `_controller`, use
     
@@ -12,12 +13,13 @@ A) in `config/routes.yaml`:
 B) Create the controller:
 
     1) Create the `SummerCampController` class
-        (hint: it should `extends Controller`_
+        hint: it should `extends Controller`
+            from FrameworkBundle
 
-    2) Add `fish` method
+    2) Add a public `fish` method
 
     3) Return a JSON response of our menu of fish
-        (hint: there is a `$this->json()` shortcut
+        hint: there is a `$this->json()` shortcut
 
         brancina, tune, romba, & škampi
 

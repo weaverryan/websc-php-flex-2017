@@ -5,7 +5,8 @@ A) Install twig
 
     composer req twig
 
-B) In the `speakers()` function, render a template:
+B) In the `speakers()` function, instead of returning
+    JSON, render a template:
 
     return $this->render('summer_camp/speakers.html.twig', [
          'speakers' => ['Marco', 'Paula', 'Antonio', 'Marcello']

@@ -26,3 +26,5 @@ SUCCESS WHEN:
 You should have a populated `vendor/` directory and
 a basic - but (if I might say) an elegant - project
 structure (`config/`, `public/`, `src/`).
+
+Also, you should know your neighbor!

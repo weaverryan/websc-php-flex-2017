@@ -5,13 +5,17 @@ A) Install Doctrine ORM!
 
     composer req orm
 
-B) Configure your database in `.env`
+B) Configure your database  in `.env`
 
-    The database name is: phpflex
+    database user: websc
+    database pass: websc
+    database name: phpflex
+
+    DATABASE_URL="mysql://websc:websc@127.0.0.1:3306/phpflex?charset=utf8mb4&serverVersion=5.7"
 
 C) Copy our `MenuItem.php` entity
 
-    cp cp _files/MenuItem.php src/Entity/
+    cp _files/MenuItem.php src/Entity/
 
 D) Add our table and load some dummy data!
 

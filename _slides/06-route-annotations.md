@@ -18,7 +18,8 @@ C) Create a new page: /speakers
     2) Give it a route with an annotation:
         @Route("/speakers")
 
-        (hint, you'll need a use statement for Route)
+        hint: you'll need a use statement for Route
+            and either Route class should work 
 
     3) Return a JSON response of some speakers:
         Marco, Paula, Antonio, Marcello
