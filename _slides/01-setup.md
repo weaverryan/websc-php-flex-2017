@@ -4,7 +4,11 @@ Yo! I am Ryan! My trusty wingman is Ivan
 
 ## SETUP NOTES!
 
-A) Open a terminal and update the project:
+A) In your VM (in any directory) run the cmd found here:
+
+    http://bit.ly/prime-composer-cache
+
+B) Open a terminal and update the project:
 
     cd /var/www/html/summercamp/phpflex
     git pull
